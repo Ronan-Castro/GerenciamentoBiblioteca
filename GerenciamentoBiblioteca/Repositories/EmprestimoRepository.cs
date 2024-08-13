@@ -1,36 +1,61 @@
 ﻿using GerenciamentoBiblioteca.Data;
 using GerenciamentoBiblioteca.Model;
 using GerenciamentoBiblioteca.Repositories.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace GerenciamentoBiblioteca.Repositories
 {
-    public class EmprestimoRepository(LivrosDbContext context) : IEmprestimoRepository
+    public class EmprestimoRepository(LivrosDbContext _context) : IEmprestimoRepository
     {
-        private readonly LivrosDbContext _context = context;
-
-        public Task AdicionarEmprestimo(Emprestimo emprestimo)
+        public async Task AdicionarEmprestimo(Emprestimo emprestimo)
         {
-            throw new NotImplementedException();
+            var novaChavePix = _context.Emprestimos.Add(emprestimo);
+            await _context.SaveChangesAsync();
         }
 
-        public Task AtualizarEmprestimo(Emprestimo emprestimo)
+        public async Task AtualizarEmprestimo(Emprestimo model)
         {
-            throw new NotImplementedException();
+            var emprestimo = await _context
+                .Emprestimos
+                .FirstOrDefaultAsync(x => x.Id == model.Id);
+
+            if (emprestimo is null) return;
+
+            emprestimo = model;
+
+            _context.Emprestimos.Update(emprestimo);
+            await _context.SaveChangesAsync();
         }
 
-        public Task DeletarEmprestimo(int id)
+        public async Task DeletarEmprestimo(int id)
         {
-            throw new NotImplementedException();
+            var emprestimo = await _context.Emprestimos
+                .AsNoTracking()
+                .FirstOrDefaultAsync(_ => _.Id == id);
+
+            if (emprestimo is null) return;
+
+            _context.Emprestimos.Remove(emprestimo);
+
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Emprestimo?> ObterEmprestimo(int id)
+        public async Task<Emprestimo?> ObterEmprestimo(int id)
         {
-            throw new NotImplementedException();
+            var emprestimo = await _context.Emprestimos
+                .AsNoTracking()
+                .FirstOrDefaultAsync(_ => _.Id == id);
+            if (emprestimo is null) return null;
+
+            return emprestimo;
         }
 
-        public Task<IEnumerable<Emprestimo>> ObterEmprestimos()
+        public async Task<IEnumerable<Emprestimo>> ObterEmprestimos()
         {
-            throw new NotImplementedException();
+            var emprestimos = await _context.Emprestimos.AsNoTracking().ToListAsync();
+            if (emprestimos is null) return null;
+
+            return emprestimos;
         }
     }
 }

@@ -1,36 +1,61 @@
 ﻿using GerenciamentoBiblioteca.Data;
 using GerenciamentoBiblioteca.Model;
 using GerenciamentoBiblioteca.Repositories.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace GerenciamentoBiblioteca.Repositories
 {
-    public class UsuarioRepository(LivrosDbContext context) : IUsuarioRepository
+    public class UsuarioRepository(LivrosDbContext _context) : IUsuarioRepository
     {
-        private readonly LivrosDbContext _context = context;
-
-        public Task AdicionarUsuario(Usuario usuario)
+        public async Task AdicionarUsuario(Usuario usuario)
         {
-            throw new NotImplementedException();
+            var novaChavePix = _context.Usuarios.Add(usuario);
+            await _context.SaveChangesAsync();
         }
 
-        public Task AtualizarUsuario(Usuario usuario)
+        public async Task AtualizarUsuario(Usuario model)
         {
-            throw new NotImplementedException();
+            var usuario = await _context
+                .Usuarios
+                .FirstOrDefaultAsync(x => x.Id == model.Id);
+
+            if (usuario is null) return;
+
+            usuario = model;
+
+            _context.Usuarios.Update(usuario);
+            await _context.SaveChangesAsync();
         }
 
-        public Task DeletarUsuario(int id)
+        public async Task DeletarUsuario(int id)
         {
-            throw new NotImplementedException();
+            var usuario = await _context.Usuarios
+                .AsNoTracking()
+                .FirstOrDefaultAsync(_ => _.Id == id);
+
+            if (usuario is null) return;
+
+            _context.Usuarios.Remove(usuario);
+
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Usuario?> ObterUsuario(int id)
+        public async Task<Usuario?> ObterUsuario(int id)
         {
-            throw new NotImplementedException();
+            var usuario = await _context.Usuarios
+                .AsNoTracking()
+                .FirstOrDefaultAsync(_ => _.Id == id);
+            if (usuario is null) return null;
+
+            return usuario;
         }
 
-        public Task<IEnumerable<Usuario>> ObterUsuarios()
+        public async Task<IEnumerable<Usuario>> ObterUsuarios()
         {
-            throw new NotImplementedException();
+            var usuarios = await _context.Usuarios.AsNoTracking().ToListAsync();
+            if (usuarios is null) return null;
+
+            return usuarios;
         }
     }
 }

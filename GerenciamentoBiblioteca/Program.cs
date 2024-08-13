@@ -1,5 +1,7 @@
+using GerenciamentoBiblioteca.Data;
 using GerenciamentoBiblioteca.Repositories;
 using GerenciamentoBiblioteca.Repositories.Interface;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +12,28 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IEmprestimoRepository, EmprestimoRepository>();
-builder.Services.AddScoped<ILivroRepository, LivroRepository>();
-builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddApiVersioning()
+                .AddMvc()
+                .AddApiExplorer(setup =>
+                {
+                    setup.GroupNameFormat = "'v'VVV";
+                    setup.SubstituteApiVersionInUrl = true;
+                });
+
+builder.Services.AddDbContext<LivrosDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddTransient<IEmprestimoRepository, EmprestimoRepository>();
+builder.Services.AddTransient<ILivroRepository, LivroRepository>();
+builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
 var app = builder.Build();
+/*
+var scope = app.Services.CreateScope();
+var pixDataContext = scope.ServiceProvider.GetService<LivrosDbContext>();
+pixDataContext.Database.Migrate();*/
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

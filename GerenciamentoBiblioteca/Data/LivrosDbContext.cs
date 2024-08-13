@@ -1,6 +1,6 @@
-﻿using GerenciamentoBiblioteca.Model;
+﻿using GerenciamentoBiblioteca.Data.Mapping;
+using GerenciamentoBiblioteca.Model;
 using Microsoft.EntityFrameworkCore;
-using System.Text.RegularExpressions;
 
 namespace GerenciamentoBiblioteca.Data
 {
@@ -13,6 +13,10 @@ namespace GerenciamentoBiblioteca.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.ApplyConfiguration(new UsuarioMap());
+            modelBuilder.ApplyConfiguration(new EmprestimoMap());
+            modelBuilder.ApplyConfiguration(new LivroMap());
         }
     }
 }
