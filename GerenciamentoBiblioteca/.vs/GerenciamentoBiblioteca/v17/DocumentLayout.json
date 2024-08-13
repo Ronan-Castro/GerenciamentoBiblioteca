@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|c:\\users\\ronan\\onedrive\\documentos\\github\\consultamedica\\gerenciamentobiblioteca\\gerenciamentobiblioteca\\gerenciamentobiblioteca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|solutionrelative:gerenciamentobiblioteca.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|c:\\users\\ronan\\onedrive\\documentos\\github\\consultamedica\\gerenciamentobiblioteca\\gerenciamentobiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GerenciamentoBiblioteca",
-              "DocumentMoniker": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj",
-              "RelativeDocumentMoniker": "GerenciamentoBiblioteca.csproj",
-              "ToolTip": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj",
-              "RelativeToolTip": "GerenciamentoBiblioteca.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-13T19:52:09.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T19:49:59.68Z",
-              "EditorCaption": ""
             }
           ]
         }

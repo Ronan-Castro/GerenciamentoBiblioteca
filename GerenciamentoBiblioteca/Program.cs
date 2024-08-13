@@ -30,10 +30,10 @@ builder.Services.AddTransient<ILivroRepository, LivroRepository>();
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
 var app = builder.Build();
-/*
+
 var scope = app.Services.CreateScope();
 var pixDataContext = scope.ServiceProvider.GetService<LivrosDbContext>();
-pixDataContext.Database.Migrate();*/
+pixDataContext.Database.Migrate();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
