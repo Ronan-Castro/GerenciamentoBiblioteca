@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GerenciamentoBiblioteca.Migrations
 {
     /// <inheritdoc />
-    public partial class migracaoInicial : Migration
+    public partial class migration_inicial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -54,7 +54,7 @@ namespace GerenciamentoBiblioteca.Migrations
                     StatusEmprestimo = table.Column<int>(type: "INT", nullable: false),
                     DataEmprestimo = table.Column<DateTime>(type: "DATETIME", nullable: false),
                     DataDevolucao = table.Column<DateTime>(type: "DATETIME", nullable: false),
-                    usuarioId = table.Column<int>(type: "int", nullable: false),
+                    UsuarioId = table.Column<int>(type: "int", nullable: false),
                     LivroId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -64,8 +64,7 @@ namespace GerenciamentoBiblioteca.Migrations
                         name: "FK_Emprestimos_Livros_IdLivro",
                         column: x => x.IdLivro,
                         principalTable: "Livros",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Emprestimos_Livros_LivroId",
                         column: x => x.LivroId,
@@ -76,11 +75,10 @@ namespace GerenciamentoBiblioteca.Migrations
                         name: "FK_Emprestimos_Usuarios_IdUsuario",
                         column: x => x.IdUsuario,
                         principalTable: "Usuarios",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Emprestimos_Usuarios_usuarioId",
-                        column: x => x.usuarioId,
+                        name: "FK_Emprestimos_Usuarios_UsuarioId",
+                        column: x => x.UsuarioId,
                         principalTable: "Usuarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -102,9 +100,9 @@ namespace GerenciamentoBiblioteca.Migrations
                 column: "LivroId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Emprestimos_usuarioId",
+                name: "IX_Emprestimos_UsuarioId",
                 table: "Emprestimos",
-                column: "usuarioId");
+                column: "UsuarioId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Usuarios_Email",

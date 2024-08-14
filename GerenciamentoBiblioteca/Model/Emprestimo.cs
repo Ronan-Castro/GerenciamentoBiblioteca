@@ -10,7 +10,7 @@
         public DateTime DataEmprestimo { get; set; }
         public DateTime DataDevolucao { get; set; }
 
-        public Usuario usuario{ get; set; }
+        public Usuario Usuario{ get; set; }
         public Livro Livro{ get; set; }
     }
 

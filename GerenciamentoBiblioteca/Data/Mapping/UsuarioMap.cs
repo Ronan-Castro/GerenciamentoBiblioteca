@@ -38,7 +38,8 @@ namespace GerenciamentoBiblioteca.Data.Mapping
             builder.HasMany(x => x.Emprestimos)
                 .WithOne()
                 .HasForeignKey(x => x.IdUsuario)
-                .IsRequired();
+                .IsRequired()
+                .OnDelete(DeleteBehavior.NoAction);
 
         }
     

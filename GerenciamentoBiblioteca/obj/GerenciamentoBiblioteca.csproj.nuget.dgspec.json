@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj": {}
+    "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj": {
+    "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj",
+        "projectUniqueName": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj",
         "projectName": "GerenciamentoBiblioteca",
-        "projectPath": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj",
-        "packagesPath": "C:\\Users\\Ronan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\obj\\",
+        "projectPath": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca.csproj",
+        "packagesPath": "C:\\Users\\nethe\\.nuget\\packages\\",
+        "outputPath": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ronan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nethe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -102,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ronan\\OneDrive\\Documentos\\GitHub\\ConsultaMedica\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|d:\\nethe\\documents\\github\\gerenciamentobiblioteca\\gerenciamentobiblioteca\\data\\mapping\\emprestimomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|solutionrelative:data\\mapping\\emprestimomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|d:\\nethe\\documents\\github\\gerenciamentobiblioteca\\gerenciamentobiblioteca\\data\\mapping\\usuariomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|solutionrelative:data\\mapping\\usuariomap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|d:\\nethe\\documents\\github\\gerenciamentobiblioteca\\gerenciamentobiblioteca\\data\\mapping\\livromap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|solutionrelative:data\\mapping\\livromap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|d:\\nethe\\documents\\github\\gerenciamentobiblioteca\\gerenciamentobiblioteca\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|d:\\nethe\\documents\\github\\gerenciamentobiblioteca\\gerenciamentobiblioteca\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50BDAB6F-34E5-483F-AF1B-8E974B836E08}|GerenciamentoBiblioteca.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmprestimoMap.cs",
+              "DocumentMoniker": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Data\\Mapping\\EmprestimoMap.cs",
+              "RelativeDocumentMoniker": "Data\\Mapping\\EmprestimoMap.cs",
+              "ToolTip": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Data\\Mapping\\EmprestimoMap.cs",
+              "RelativeToolTip": "Data\\Mapping\\EmprestimoMap.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAADwvycAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T00:39:54.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioMap.cs",
+              "DocumentMoniker": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Data\\Mapping\\UsuarioMap.cs",
+              "RelativeDocumentMoniker": "Data\\Mapping\\UsuarioMap.cs",
+              "ToolTip": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Data\\Mapping\\UsuarioMap.cs",
+              "RelativeToolTip": "Data\\Mapping\\UsuarioMap.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowEsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T00:38:45.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LivroMap.cs",
+              "DocumentMoniker": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Data\\Mapping\\LivroMap.cs",
+              "RelativeDocumentMoniker": "Data\\Mapping\\LivroMap.cs",
+              "ToolTip": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\Data\\Mapping\\LivroMap.cs",
+              "RelativeToolTip": "Data\\Mapping\\LivroMap.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T00:38:44.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T00:30:45.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\nethe\\Documents\\GitHub\\GerenciamentoBiblioteca\\GerenciamentoBiblioteca\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-14T00:30:40.381Z",
+              "EditorCaption": ""
             }
           ]
         }

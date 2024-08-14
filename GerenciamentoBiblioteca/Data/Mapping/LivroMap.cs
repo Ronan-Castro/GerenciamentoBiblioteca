@@ -47,7 +47,8 @@ namespace GerenciamentoBiblioteca.Data.Mapping
             builder.HasMany(x => x.Emprestimos)
                 .WithOne()
                 .HasForeignKey(x => x.IdLivro)
-                .IsRequired();
+                .IsRequired()
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

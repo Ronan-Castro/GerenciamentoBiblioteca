@@ -49,11 +49,11 @@ namespace GerenciamentoBiblioteca.Migrations
                         .HasColumnType("INT")
                         .HasColumnName("StatusEmprestimo");
 
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("ValorEmprestimo")
                         .HasColumnType("DECIMAL(15,2)");
-
-                    b.Property<int>("usuarioId")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -63,7 +63,7 @@ namespace GerenciamentoBiblioteca.Migrations
 
                     b.HasIndex("LivroId");
 
-                    b.HasIndex("usuarioId");
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Emprestimos", (string)null);
                 });
@@ -133,13 +133,13 @@ namespace GerenciamentoBiblioteca.Migrations
                     b.HasOne("GerenciamentoBiblioteca.Model.Livro", null)
                         .WithMany("Emprestimos")
                         .HasForeignKey("IdLivro")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("GerenciamentoBiblioteca.Model.Usuario", null)
                         .WithMany("Emprestimos")
                         .HasForeignKey("IdUsuario")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.HasOne("GerenciamentoBiblioteca.Model.Livro", "Livro")
@@ -148,15 +148,15 @@ namespace GerenciamentoBiblioteca.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GerenciamentoBiblioteca.Model.Usuario", "usuario")
+                    b.HasOne("GerenciamentoBiblioteca.Model.Usuario", "Usuario")
                         .WithMany()
-                        .HasForeignKey("usuarioId")
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Livro");
 
-                    b.Navigation("usuario");
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("GerenciamentoBiblioteca.Model.Livro", b =>

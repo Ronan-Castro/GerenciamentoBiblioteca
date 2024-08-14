@@ -38,8 +38,6 @@ namespace GerenciamentoBiblioteca.Data.Mapping
                 .Property(u => u.DataDevolucao)
                 .IsRequired()
                 .HasColumnType("DATETIME");
-
-
         }
     }
 }
